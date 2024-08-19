@@ -24,5 +24,5 @@ for (const movie of movies) {
   }
 }
 
-console.log(before2000);
-console.log(after2000);
+console.log("Películas antes del 2000: " + before2000);
+console.log("Películas después del 2000: " + after2000);

@@ -1,7 +1,7 @@
 //Ejercicio 4
 
 const cartoons = [
-  { name: "Mickey Mouse", debut: 1990 },
+  { name: "Mickey Mouse", debut: 1928 },
   { name: "Bugs Bunny", debut: 1938 },
   { name: "SpongeBob SquarePants", debut: 1999 },
   { name: "Tom and Jerry", debut: 1940 },
@@ -13,7 +13,7 @@ const cartoons = [
   { name: "Dexter's Laboratory", debut: 1996 },
 ];
 
-cartoons.sort((a, b) => {
-  console.log(a, b);
-  return a.debut - b.debut;
-});
+cartoons.sort((a, b) => a.debut - b.debut);
+console.log(cartoons);
+const oldestCartoon = cartoons[0];
+console.log("La serie más antigua es: " + oldestCartoon.name);
