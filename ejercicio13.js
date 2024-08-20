@@ -24,7 +24,6 @@ function calculateActorsAges(actorsList) {
     };
     actorsByAge.push(item);
   }
-
   console.log(actorsByAge);
 }
 

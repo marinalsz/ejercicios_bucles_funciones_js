@@ -1,6 +1,6 @@
 //Ejercicio 11
 
-const movies = [
+const films = [
   { title: "Inception", duration: 148 },
   { title: "The Dark Knight", duration: 152 },
   { title: "Interstellar", duration: 169 },
@@ -14,13 +14,12 @@ const movies = [
 ];
 
 function averageMovieDuration(movies) {
-  const moviesNumber = movies.length;
-  let totalMinutes = 0;
+  let total = 0;
   for (const movie of movies) {
-    totalMinutes += movie.duration;
+    total += movie.duration;
   }
-  const average = totalMinutes / moviesNumber;
+  const average = total / movies.length;
   console.log(average);
 }
 
-averageMovieDuration(movies);
+averageMovieDuration(films);

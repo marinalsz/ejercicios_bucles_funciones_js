@@ -18,13 +18,10 @@ const moviesByDecade = {};
 
 for (const movie of starWarsMovies) {
   const decade = Math.floor(movie.releaseYear / 10) * 10;
-  const decadeKey = `${decade}s`;
-
-  if (!moviesByDecade[decadeKey]) {
-    moviesByDecade[decadeKey] = [];
+  if (!moviesByDecade[decade]) {
+    moviesByDecade[decade] = [];
   }
-
-  moviesByDecade[decadeKey].push(movie.title);
+  moviesByDecade[decade].push(movie.title);
 }
 
 console.log(moviesByDecade);

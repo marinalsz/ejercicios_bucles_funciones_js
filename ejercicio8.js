@@ -23,7 +23,7 @@ const artists = [
 for (let i = 0; i < artists.length; i++) {
   const artist = artists[i];
   const name = artist.name;
-  console.log("Artist:" + name + " -> ");
+  console.log("Artist: " + name + ". Influences: ");
   for (let j = 0; j < artist.influences.length; j++) {
     const influence = artist.influences[j];
     console.log(influence);

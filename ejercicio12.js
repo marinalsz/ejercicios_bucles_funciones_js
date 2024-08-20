@@ -4,7 +4,7 @@ const mutants = [
   { name: "Wolverine", power: "regeneration" },
   { name: "Magneto", power: "magnetism" },
   { name: "Professor X", power: "telepathy" },
-  { name: "Jean Grey", power: "telepathy" },
+  { name: "Jean Grey", power: "telekinesis" },
   { name: "Rogue", power: "power absorption" },
   { name: "Storm", power: "weather manipulation" },
   { name: "Mystique", power: "shape-shifting" },
@@ -13,9 +13,9 @@ const mutants = [
   { name: "Nightcrawler", power: "teleportation" },
 ];
 
-function findMutantByPower(mutantList, power) {
+function findMutantByPower(list, power) {
   const foundMutants = [];
-  for (const mutant of mutantList) {
+  for (const mutant of list) {
     if (mutant.power === power) {
       foundMutants.push(mutant.name);
     }

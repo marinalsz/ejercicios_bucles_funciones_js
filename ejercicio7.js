@@ -23,4 +23,5 @@ for (const track of tracks) {
   }
   music[genre].push(title);
 }
+
 console.log(music);
